@@ -13,7 +13,7 @@ Because we are using .vue files and modern javascript syntax in our application,
 ## How to use
 
 1. Configure a uibuilder node on your Node-Red flow with the URL set to e.g. : `navbar` 
-2. In Template Settings, select `Load an external template using Degit` and load the template from `unborn-andy/uib-template-vue-navbar`
+2. In Template Settings, select `Load an external template using Degit` and load the template from<br> `unborn-andy/uib-template-vue-navbar`
 3. In Advanced settings, set it to serve files from the `/dist` folder.
 4. From `~/.node-red/uibuilder/navbar` run `npm install` to install all the dependancies of the app based on the package.json file.
 5. Run `npm run build` so parcel-bundler will build the app into the `/dist` folder.
