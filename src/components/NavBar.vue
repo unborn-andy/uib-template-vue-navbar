@@ -7,12 +7,12 @@
           <span class="ml-3 mr-5 hvr-buzz-out">Project Name</span>
         </b-nav-text>
         <b-nav-item to="/" exact :active="$route.name == 'home'">Home</b-nav-item>
-        <b-nav-item to="/page1" exact :active="$route.name == 'page1'">Page1</b-nav-item>
-        <b-nav-item to="/page2" exact :active="$route.name == 'page2'">Page2</b-nav-item>
-        <b-nav-item to="/page3" exact :active="$route.name == 'page3'">Page3</b-nav-item>
-        <b-nav-item-dropdown text="Page4" left :class="{ active: $route.path.startsWith('/page4') }">
-          <b-dropdown-item to="/page4a" exact :active="$route.name == 'page4a'">Page4a</b-dropdown-item>
-          <b-dropdown-item to="/page4b" exact :active="$route.name == 'page4b'">Page4b</b-dropdown-item>
+        <b-nav-item to="/page1" exact :active="$route.name == 'page1'">Page 1</b-nav-item>
+        <b-nav-item to="/page2" exact :active="$route.name == 'page2'">Page 2</b-nav-item>
+        <b-nav-item to="/page3" exact :active="$route.name == 'page3'">Page 3</b-nav-item>
+        <b-nav-item-dropdown text="Page 4" left :class="{ active: $route.path.startsWith('/page4') }">
+          <b-dropdown-item to="/page4a" exact :active="$route.name == 'page4a'">Page 4a</b-dropdown-item>
+          <b-dropdown-item to="/page4b" exact :active="$route.name == 'page4b'">Page 4b</b-dropdown-item>
         </b-nav-item-dropdown>
       </b-navbar-nav>
       <!-- Right aligned nav items -->

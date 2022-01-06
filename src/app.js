@@ -22,6 +22,5 @@ new Vue({
   el: "#app",
   // runtimerCompiler: true,
   router,
-  //  store,
   render: (h) => h(App),
 });

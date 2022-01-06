@@ -1,6 +1,6 @@
 <template lang="html">
   <b-container fluid class="pr-5">
-    <h2 class="ml-4 mt-4">Page1</h2>
+    <h2 class="ml-4 mt-4">Page 1</h2>
   </b-container>
 </template>
 
