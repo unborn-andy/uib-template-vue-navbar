@@ -1,0 +1,25 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "vite",
+    "watch": "vite build --watch --emptyOutDir",
+    "build": "vite build --emptyOutDir"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap-vue": "^2.22.0",
+    "vue": "^2.7.8",
+    "vue-json-pretty": "^1.8.3",
+    "vue-router": "^3.5.4",
+    "vue-template-compiler": "^2.6.14"
+  },
+  "devDependencies": {
+    "vite": "^3.0.4",
+    "vite-plugin-vue": "^0.0.0",
+    "vite-plugin-vue2": "^2.0.2"
+  }
+}
