@@ -21,7 +21,7 @@ export default {
 mounted() {
   
   //uibuilder.debug(true);
-  uibuilder.start('/monitor', '/uibuilder/vendor/socket.io')
+  uibuilder.start('/navbar', '/uibuilder/vendor/socket.io')
     
 }
 
