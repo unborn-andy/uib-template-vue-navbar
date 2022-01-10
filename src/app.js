@@ -15,8 +15,13 @@ Vue.use(IconsPlugin);
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
 
+// Optionally install the vue-json-pretty components
+import VueJsonPretty from 'vue-json-pretty';
+import 'vue-json-pretty/lib/styles.css';
+Vue.component('VueJsonPretty', VueJsonPretty);
 
 window.uibuilder = uibuilder;
+uibuilder.start('/navbar', '/uibuilder/vendor/socket.io')
 
 new Vue({
   el: "#app",
