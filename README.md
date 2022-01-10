@@ -1,23 +1,25 @@
 ## Node-Red Uibuilder Vue Navbar
 
 This is an external template for node-red-contrib-uibuilder.<br>
-(It uses Vue 2, vue-router and bootstrap-vue for the navigation between pages)
+( It uses Vue 2, vue-router and bootstrap-vue for the navigation between pages )
 
 Each page is a seperate .vue component file (Single File Component) that loads in the parent App.vue using vue-router.<br>
 We use a SFC for each page to seperate and make the design cleaner with its own code and functionality.<br>
 
 Because we are using .vue files and modern javascript syntax in our application, we'll need a bundler to build/translate that code into plain javascript. In this project I use parcel-bundler.
+( you dont have to worry about installing parcel-bundler, it gets installed when you run `npm install` as it is in `package.json` devDependencies )
+
 
 <br>
 
-## How to use
+## How to install
 
 1. Configure a uibuilder node on your Node-Red flow with the URL set to e.g. : `navbar` 
 2. In Template Settings, select `Load an external template using Degit` and load the template from<br> `unborn-andy/uib-template-vue-navbar`
 3. In Advanced settings, set it to serve files from the `/dist` folder.
 4. From `~/.node-red/uibuilder/navbar` run `npm install` to install all the dependencies of the app based on the package.json file.
 5. Run `npm run build` so parcel-bundler will build the app into the `/dist` folder.
-6. Browser to `http://<nodered-ip>:1880/navbar`
+6. Browse to `http://<nodered-ip>:1880/navbar`
 
 <br>
 
