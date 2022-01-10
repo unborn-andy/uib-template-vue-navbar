@@ -3,10 +3,10 @@
 This is an external template for node-red-contrib-uibuilder.<br>
 ( It uses Vue 2, vue-router and bootstrap-vue for the navigation between pages )
 
-Each page is a seperate .vue component file (Single File Component) that loads in the parent App.vue using vue-router.<br>
+Each page is a seperate .vue component file (Single File Component) that loads in the parent App.vue<br> using vue-router.<br>
 We use a SFC for each page to seperate and make the design cleaner with its own code and functionality.<br>
 
-Because we are using .vue files and modern javascript syntax in our application, we'll need a bundler to build/translate that code into plain javascript. In this project I use parcel-bundler.
+Because we are using .vue files and modern javascript syntax in our application, we'll need a bundler to build/translate that code into plain javascript. In this project I use parcel-bundler.<br>
 ( you dont have to worry about installing parcel-bundler, it gets installed when you run `npm install` as it is in `package.json` devDependencies )
 
 
