@@ -3,15 +3,21 @@
 This is an external template for **node-red-contrib-uibuilder**.<br>
 ( It uses Vue 2, bootstrap-vue and vue-router for the navigation between pages )
 
+![image](https://user-images.githubusercontent.com/93290787/149122058-2a7d87f0-bd55-4aaf-959a-88e1f457a218.png)
+
+
 Each page is a seperate .vue component file (Single File Component) that loads in the parent **App.vue**<br> using vue-router. We use a SFC for each page to seperate and make the design cleaner with its own code and functionality.<br>
+
+**Folder structure :**
+
+![image](https://user-images.githubusercontent.com/93290787/149117883-2177d415-8e9b-408a-af84-2f5ad1100e12.png)
+
 
 Because we are using .vue files and modern javascript syntax in our application, we'll need a bundler to build/translate that code into plain javascript so the browser can understand. In this project we use **parcel-bundler**.
 
 You dont have to worry about installing or configuring anything with parcel-bundler, it gets installed when you run `npm install` as it is in `package.json` devDependencies, along with two script commands `npm run build` to build your app and `npm run watch` to build and continue watching for any file changes, which makes re-building much faster during development.
 
 Enough with the intro .. lets get coding.
-
-<br>
 
 ## How to install
 
@@ -22,7 +28,14 @@ Enough with the intro .. lets get coding.
 5. Run `npm run build` so parcel-bundler will build the app into the `/dist` folder.
 6. Browse to `http://<nodered-ip>:1880/navbar`
 
-<br>
+## Configuration
+
+1. In `index.html` change the IP of `<script src="http://192.168.0.7:1880/uibuilder/vendor/socket.io/socket.io.js"></script>`<br>to match your Node-red server's IP
+2. During the installation steps I used as an example the uibuilder url `navbar`.<br>
+If you used something else more appropriate for your project, then you have to make two changes for the navigation to work.<br> 
+in `app.js` change `uibuilder.start('/navbar', '/uibuilder/vendor/socket.io')` and in `router.js` change `base: "navbar",`
+3. Rebuild the app using `npm run build`
+
 
 #### Example of a working project :
 
