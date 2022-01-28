@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "dev": "parcel watch ./src/index.html --public-url ./  --no-cache --out-dir ./dist/",
-    "build": "parcel build ./src/index.html --no-source-maps --public-url ./  --no-cache --out-dir ./dist/ --detailed-report"
+    "build": "rm -rf ./dist/* && parcel build ./src/index.html --public-url ./  --no-cache --out-dir ./dist/ --detailed-report"
   },
   "author": "",
   "license": "ISC",
