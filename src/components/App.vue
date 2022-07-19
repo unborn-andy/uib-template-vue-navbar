@@ -1,4 +1,4 @@
-<template lang="html">
+<template>
   <div>
     <navbar></navbar>
     <keep-alive :max="13">

@@ -1,4 +1,4 @@
-<template lang="html">
+<template>
   <b-container fluid class="pr-5">
     <h2 class="ml-4 mt-4">Page2</h2>
   </b-container>

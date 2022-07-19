@@ -2,12 +2,12 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 
 // Pages
-import Home from "./components/Home";
-import Page1 from "./components/Page1";
-import Page2 from "./components/Page2";
-import Page3 from "./components/Page3";
-import Page4a from "./components/Page4a";
-import Page4b from "./components/Page4b";
+import Home from "./components/Home.vue";
+import Page1 from "./components/Page1.vue";
+import Page2 from "./components/Page2.vue";
+import Page3 from "./components/Page3.vue";
+import Page4a from "./components/Page4a.vue";
+import Page4b from "./components/Page4b.vue";
 
 
 Vue.use(VueRouter);
