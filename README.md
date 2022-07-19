@@ -1,6 +1,6 @@
 ## Node-Red Uibuilder Vue Navbar
 
-This is an external template for **node-red-contrib-uibuilder**.<br>
+This is a top navigation bar template for **node-red-contrib-uibuilder v5.1.1**.<br>
 ( It uses Vue 2, bootstrap-vue and vue-router for the navigation between pages )
 
 ![image](https://user-images.githubusercontent.com/93290787/149122058-2a7d87f0-bd55-4aaf-959a-88e1f457a218.png)

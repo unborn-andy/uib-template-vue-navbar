@@ -2,13 +2,7 @@ import Vue from "vue";
 import App from "./components/App.vue";
 import router from "./router";
 
-//import io from 'socket.io-client'
-//import uibuilder from "./../../../node_modules/node-red-contrib-uibuilder/front-end/uibuilderfe.js";
-//window.uibuilder = uibuilder;
-//window.io = io;
-
 import {Uib, uibuilder} from './../../../node_modules/node-red-contrib-uibuilder/front-end/uibuilder.esm.min.js'
-
 
 import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
 
@@ -25,9 +19,8 @@ import VueJsonPretty from "vue-json-pretty";
 import "vue-json-pretty/lib/styles.css";
 Vue.component("VueJsonPretty", VueJsonPretty);
 
-//window.uibuilder = uibuilder;
+
 // uibuilder.debug(false);
-//uibuilder.start('/navbar', '/uibuilder/vendor/socket.io')
 uibuilder.start({ ioNamespace: "/navbar", loadStylesheet: false });
 
 // Enable Devtools
