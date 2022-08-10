@@ -1,6 +1,6 @@
 <template>
   <b-container fluid class="pr-5">
-    <h2 class="ml-4 mt-4 text-danger">Home !!</h2>
+    <h2 class="ml-4 mt-4 text-info">Home !!</h2>
   </b-container>
 </template>
 

@@ -1,14 +1,11 @@
 import Vue from "vue";
 import App from "./components/App.vue";
 import router from "./router";
-
 import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
 
-// Install BootstrapVue
-Vue.use(BootstrapVue);
 // Optionally install the BootstrapVue icon components plugin
+Vue.use(BootstrapVue);
 Vue.use(IconsPlugin);
-
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
 
@@ -17,19 +14,18 @@ import VueJsonPretty from "vue-json-pretty";
 import "vue-json-pretty/lib/styles.css";
 Vue.component("VueJsonPretty", VueJsonPretty);
 
-// import { Uib, uibuilder } from "./../../../node_modules/node-red-contrib-uibuilder/front-end/uibuilder.esm";
-window.uibuilder = uibuilder;
+import { Uib, uibuilder } from "./../../../node_modules/node-red-contrib-uibuilder/front-end/uibuilder.esm.js";
+// window.uibuilder = uibuilder;
 // uibuilder.logLevel = 5
-// uibuilder.start({ ioNamespace: "/navbar", loadStylesheet: false });
-uibuilder.debug(false)
-uibuilder.start("https://192.168.0.7:1880/navbar");
+uibuilder.start({ ioNamespace: "https://192.168.0.7:1880/navbar", loadStylesheet: false });
+// uibuilder.start("https://192.168.0.7:1880/navbar");
+// uibuilder.debug(false)
 
-// Enable Devtoolsq
+// Enable Vue Devtools
 Vue.config.devtools = true;
 
 new Vue({
   el: "#app",
-  // runtimerCompiler: true,
   router,
   render: (h) => h(App),
 });
