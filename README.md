@@ -26,18 +26,22 @@ Enough with the intro .. lets get coding.
 3. In Advanced settings, set it to serve files from the `/dist` folder.
 4. From `~/.node-red/uibuilder/navbar` run `npm install` to install all the dependencies of the app based on the package.json file.
 5. Run `npm run build` so Vite will build the app into the `/dist` folder.
-6. Browse to `http://<nodered-ip>:1880/navbar`
+6. Run `npm run dev` so Vite will spin up a dev server with Hot Module Reloading.
 
 ## Configuration
 
 1. During the installation steps I used as an example the uibuilder url `navbar`.<br>
-If you used something else more appropriate for your project, then you have to make two changes for the navigation to work.<br> 
-in `app.js` change `uibuilder.start('/navbar', '/uibuilder/vendor/socket.io')` and <br> in `router.js` change `base: "navbar",`
+If you used something else more appropriate for your project, then you have to make some changes for the navigation to work. In `router.js` change `base: "navbar",` and in `app.js` change the ioNamespace subpath of :  
+
+```
+uibuilder.start({ ioNamespace: `https://${document.location.hostname}:1880/navbar`, ioPath: "/uibuilder/vendor/socket.io", loadStylesheet: false });
+```
+
 2. If you want to rename any of the pages in /components folder to something more descriptive to your project,<br> then rename them and make the relative changes to  the `router.js` and `NavBar.vue` files.   
 3. After any change, rebuild the app using `npm run build`
 
 
-#### Example of a working project :
+#### Example from a working project :
 
 ![Energy-Monitor](https://github.com/unborn-andy/nodered-monitor/blob/master/Energy%20Monitoring.png)
 
