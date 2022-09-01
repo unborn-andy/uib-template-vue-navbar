@@ -12,13 +12,13 @@
   "license": "ISC",
   "dependencies": {
     "bootstrap-vue": "^2.22.0",
-    "vue": "^2.7.8",
-    "vue-json-pretty": "^1.8.3",
-    "vue-router": "^3.5.4",
-    "vue-template-compiler": "^2.6.14"
+    "vue": "^2.7.10",
+    "vue-json-pretty": "^1.9.2",
+    "vue-router": "^3.6.4",
+    "vue-template-compiler": "^2.7.10"
   },
   "devDependencies": {
-    "vite": "^3.0.4",
+    "vite": "^3.0.9",
     "vite-plugin-vue": "^0.0.0",
     "vite-plugin-vue2": "^2.0.2"
   }

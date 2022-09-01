@@ -3,6 +3,7 @@ import App from "./components/App.vue";
 import router from "./router";
 import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
 
+import { Uib, uibuilder } from "./../../../node_modules/node-red-contrib-uibuilder/front-end/uibuilder.esm.js";
 // Optionally install the BootstrapVue icon components plugin
 Vue.use(BootstrapVue);
 Vue.use(IconsPlugin);
@@ -14,10 +15,9 @@ import VueJsonPretty from "vue-json-pretty";
 import "vue-json-pretty/lib/styles.css";
 Vue.component("VueJsonPretty", VueJsonPretty);
 
-import { Uib, uibuilder } from "./../../../node_modules/node-red-contrib-uibuilder/front-end/uibuilder.esm.js";
 // window.uibuilder = uibuilder;
 // uibuilder.logLevel = 5
-uibuilder.start({ ioNamespace: "https://192.168.0.7:1880/navbar", loadStylesheet: false });
+uibuilder.start({ ioNamespace: `https://${document.location.hostname}:1880/navbar`, ioPath: "/uibuilder/vendor/socket.io", loadStylesheet: false });
 // uibuilder.start("https://192.168.0.7:1880/navbar");
 // uibuilder.debug(false)
 
